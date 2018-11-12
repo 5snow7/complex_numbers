@@ -69,7 +69,7 @@ int check_n(comp c,comp z,int n){
   return j;
 }
 
-int check_sinz(comp c,comp z){
+int checkSinz(comp c,comp z){
  int j=1;
  
  while(j<100){

@@ -33,9 +33,10 @@ print("testone");
 void draw(){
   
 }
-
+char sec='a';
 void keyPressed(){
-  if(key=='m'){mandel1(4);}//save("mandel1.jpg");}
+if(key=='q'){sec='q';}
+if(key=='m'){mandel1(4);}//save("mandel1.jpg");}
 if(key=='b'){background(0);mandelwatch(c2,c1,6);}
 if(key=='5'){julia(c5,4);}
 if(key=='3'){julia(c3,4);}
@@ -54,7 +55,15 @@ if(key=='b'){blowup(.3,.1,.125);}
 //float ys1=key;blowup(xs1,ys1,.5);}
 if(key=='n'){blowup(xs1,ys1,.5);}
 if(key=='j'){blowup_julia(xs1,ys1,c5,.015);text(xs1,200,200);}
-//if(key=='x'){blowup_julia(xs1,ys1,c5,.015);}
+if(sec=='q'&&key=='1'){sec='a';juliaS(c1,4);}
+if(sec=='q'&&key=='2'){sec='a';juliaS(c2,4);}
+if(sec=='q'&&key=='3'){sec='a';juliaS(c3,4);}
+if(sec=='q'&&key=='4'){sec='a';juliaS(c4,4);}
+if(sec=='q'&&key=='5'){sec='a';juliaS(c5,4);}
+if(sec=='q'&&key=='6'){sec='a';juliaS(c6,4);}
+if(sec=='q'&&key=='7'){sec='a';juliaS(c7,4);}
+if(sec=='q'&&key=='8'){sec='a';juliaS(c8,4);}
+if(sec=='q'&&key=='9'){sec='a';juliaS(c9,4);}
 
 }
 
